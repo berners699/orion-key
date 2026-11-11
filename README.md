@@ -24,12 +24,12 @@ Automated Digital Goods Delivery Platform
 
 ## 截图预览
 
-| 前台首页（亮色） | 前台首页（暗色） |
-|:---:|:---:|
+|              前台首页（亮色）               |              前台首页（暗色）              |
+| :-----------------------------------------: | :----------------------------------------: |
 | ![首页-亮色](.github/assets/home-light.png) | ![首页-暗色](.github/assets/home-dark.png) |
 
-| 管理后台（亮色） | 管理后台（暗色） |
-|:---:|:---:|
+|               管理后台（亮色）               |              管理后台（暗色）               |
+| :------------------------------------------: | :-----------------------------------------: |
 | ![后台-亮色](.github/assets/admin-light.png) | ![后台-暗色](.github/assets/admin-dark.png) |
 
 ---
@@ -38,23 +38,23 @@ Automated Digital Goods Delivery Platform
 
 > 演示环境已开放，可直接登录管理后台体验完整功能。
 
-| | 地址 |
-|---|---|
-| 🛒 **前台** | <a href="https://www.orionkey-demo.com/" target="_blank" rel="noopener noreferrer">https://www.orionkey-demo.com/</a> |
-| 🛠️ **管理后台** | <a href="https://www.orionkey-demo.com/admin" target="_blank" rel="noopener noreferrer">https://www.orionkey-demo.com/admin</a> |
-| 🔑 **管理员账号** | `admin` / `123456` |
+|                   | 地址                                                                                                                            |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| 🛒 **前台**       | <a href="https://www.orionkey-demo.com/" target="_blank" rel="noopener noreferrer">https://www.orionkey-demo.com/</a>           |
+| 🛠️ **管理后台**   | <a href="https://www.orionkey-demo.com/admin" target="_blank" rel="noopener noreferrer">https://www.orionkey-demo.com/admin</a> |
+| 🔑 **管理员账号** | `admin` / `123456`                                                                                                              |
 
 ---
 
 ## 核心特性
 
-|  |  |
-|---|---|
-| 🛒 **自动发卡** — 下单支付后自动发放卡密，零人工干预 | 🎨 **主题切换** — 支持亮色/暗色模式，多主题色自由切换 |
-| 📦 **商品管理** — 分类、上下架、库存、批量导入卡密 | 🔒 **安全认证** — JWT 无状态认证 + BCrypt 加密 |
-| 💳 **多支付渠道** — 可扩展的支付架构，支持微信/支付宝 | 🛡️ **风控系统** — IP 限流、登录防爆破、订单防刷 |
-| 📊 **管理后台** — 仪表盘数据概览、订单/用户/站点全面管理 | 🔍 **订单追踪** — 订单号查询卡密，支持游客和会员 |
-| 🛍️ **购物车** — 多商品合并下单，提升购买体验 | ⚙️ **站点配置** — 公告、弹窗、维护模式，后台一键开关 |
+|                                                          |                                                       |
+| -------------------------------------------------------- | ----------------------------------------------------- |
+| 🛒 **自动发卡** — 下单支付后自动发放卡密，零人工干预     | 🎨 **主题切换** — 支持亮色/暗色模式，多主题色自由切换 |
+| 📦 **商品管理** — 分类、上下架、库存、批量导入卡密       | 🔒 **安全认证** — JWT 无状态认证 + BCrypt 加密        |
+| 💳 **多支付渠道** — 可扩展的支付架构，支持微信/支付宝    | 🛡️ **风控系统** — IP 限流、登录防爆破、订单防刷       |
+| 📊 **管理后台** — 仪表盘数据概览、订单/用户/站点全面管理 | 🔍 **订单追踪** — 订单号查询卡密，支持游客和会员      |
+| 🛍️ **购物车** — 多商品合并下单，提升购买体验             | ⚙️ **站点配置** — 公告、弹窗、维护模式，后台一键开关  |
 
 ---
 
@@ -92,31 +92,32 @@ Automated Digital Goods Delivery Platform
 
 ## 支付渠道集成
 
-| 渠道            | 接入方式        | 说明             |
-|---------------|-------------|----------------|
-| 支付宝           | 易支付集成       | 通过第三方易支付平台接入   |
-| 微信支付          | 易支付集成       | 通过第三方易支付平台接入   |
-| 支付宝     | 原生接入（待实现）   | 需企商户资质 |
-| 微信支付   | 原生接入（待实现）   | 需商户资质  |
-| USDT (TRC-20) | BEpusdt 自托管 | 链上自动确认，无第三方托管  |
-| USDT (BEP-20) | BEpusdt 自托管 | 链上自动确认，无第三方托管  |
+| 渠道          | 接入方式           | 说明                       |
+| ------------- | ------------------ | -------------------------- |
+| 支付宝        | 易支付集成         | 通过第三方易支付平台接入   |
+| 微信支付      | 易支付集成         | 通过第三方易支付平台接入   |
+| 支付宝        | 原生接入（待实现） | 需企商户资质               |
+| 微信支付      | 原生接入（待实现） | 需商户资质                 |
+| USDT (TRC-20) | BEpusdt 自托管     | 链上自动确认，无第三方托管 |
+| USDT (BEP-20) | BEpusdt 自托管     | 链上自动确认，无第三方托管 |
 
 > 支付架构可扩展，可通过后台「支付渠道管理」自由配置和切换。
 
 💡 **易支付入驻推荐**：<a href="https://api.niman.cn/user/?invite=X1NUVw" target="_blank" rel="noopener noreferrer">https://api.niman.cn/user/?invite=X1NUVw</a>
+
 > 通过该链接注册后，联系易支付客服 QQ：**26266156**（备注 **1203**），可享受永久 **3%** 超低提现手续费。
 
 ---
 
 ## 技术架构
 
-| 层级 | 技术栈 |
-|------|--------|
-| **前端** | Next.js 16 · React 19 · TypeScript · Tailwind CSS 3 · shadcn/ui |
-| **后端** | Spring Boot 3.4 · Java 22 · Spring Data JPA · Spring Security |
-| **数据库** | PostgreSQL 18+ |
-| **认证** | JWT (jjwt) · BCrypt |
-| **构建** | pnpm (前端) · Maven (后端) |
+| 层级       | 技术栈                                                          |
+| ---------- | --------------------------------------------------------------- |
+| **前端**   | Next.js 16 · React 19 · TypeScript · Tailwind CSS 3 · shadcn/ui |
+| **后端**   | Spring Boot 3.4 · Java 22 · Spring Data JPA · Spring Security   |
+| **数据库** | PostgreSQL 18+                                                  |
+| **认证**   | JWT (jjwt) · BCrypt                                             |
+| **构建**   | pnpm (前端) · Maven (后端)                                      |
 
 ### Monorepo 目录结构
 
@@ -160,13 +161,13 @@ orion-key/
 
 开始之前，请确保已安装以下工具：
 
-| 工具 | 版本 | 说明 |
-|------|------|------|
-| Java | 22+ | 后端运行环境 |
-| Maven | 3.9+ | 后端构建工具 |
-| Node.js | 20+ | 前端运行环境 |
-| pnpm | 9+ | 前端包管理（`npm i -g pnpm`） |
-| PostgreSQL | 18+ | 数据库，需提前创建库和用户 |
+| 工具       | 版本 | 说明                          |
+| ---------- | ---- | ----------------------------- |
+| Java       | 22+  | 后端运行环境                  |
+| Maven      | 3.9+ | 后端构建工具                  |
+| Node.js    | 20+  | 前端运行环境                  |
+| pnpm       | 9+   | 前端包管理（`npm i -g pnpm`） |
+| PostgreSQL | 18+  | 数据库，需提前创建库和用户    |
 
 ---
 
@@ -188,7 +189,6 @@ spring:
 
 首次启动自动建表（`ddl-auto: update`），启动后执行一次初始化 SQL(data.sql文件) 写入管理员账户、站点配置：
 
-
 > SQL 内置 `WHERE NOT EXISTS`，多次执行不会产生重复数据。
 
 ### JWT 认证
@@ -196,7 +196,7 @@ spring:
 ```yaml
 jwt:
   secret: ${JWT_SECRET:<用 openssl rand -base64 48 生成>}
-  expiration: 86400000  # 24 小时
+  expiration: 86400000 # 24 小时
 ```
 
 生产环境**必须**通过 `JWT_SECRET` 环境变量注入随机密钥（至少 256 bits）：
@@ -209,7 +209,7 @@ openssl rand -base64 48
 
 ```yaml
 security:
-  password-plain: ${PASSWORD_PLAIN:true}  # true=明文密码(开发用), false=BCrypt(生产用)
+  password-plain: ${PASSWORD_PLAIN:true} # true=明文密码(开发用), false=BCrypt(生产用)
 ```
 
 - **本地开发**：`true`（默认），密码明文存储，方便调试
@@ -226,7 +226,7 @@ spring:
     password: ${MAIL_PASSWORD:your_password}
 
 mail:
-  enabled: ${MAIL_ENABLED:true}       # 邮件功能总开关，设为 false 可关闭所有邮件发送
+  enabled: ${MAIL_ENABLED:true} # 邮件功能总开关，设为 false 可关闭所有邮件发送
   site-url: ${MAIL_SITE_URL:https://your-domain.com}
 ```
 
@@ -234,8 +234,8 @@ mail:
 
 ```yaml
 upload:
-  path: ${UPLOAD_PATH:./uploads}                # 文件存储路径
-  url-prefix: ${UPLOAD_URL_PREFIX:/api/uploads}  # 访问 URL 前缀
+  path: ${UPLOAD_PATH:./uploads} # 文件存储路径
+  url-prefix: ${UPLOAD_URL_PREFIX:/api/uploads} # 访问 URL 前缀
 ```
 
 ---
@@ -323,7 +323,7 @@ pnpm dev:web
 
 ## 商务合作
 
-**自动发卡网代建、商务合作联系  QQ: 843676885**
+**自动发卡网代建、商务合作联系 QQ: 843676885**
 
 ---
 
