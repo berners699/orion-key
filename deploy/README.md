@@ -66,3 +66,5 @@ bash deploy/package-web-update.sh orion-key-web:update-版本
 手动回滚时，从 rollback.txt 取得具体回滚标签，在 `/opt/orion-cloud` 执行 `docker tag <回滚标签> orion-key-web:cloud`，再执行 `docker compose up -d --no-deps --force-recreate --wait --wait-timeout 180 web`。不要执行 down -v 或镜像清理，保留恢复依据。
 
 当前已完成负责人实付验收，后续正式上线事项见 [上线待办](../docs/tasks/production-launch.md)。初次启动脚本仍需结合小内存服务器分阶段执行；此前全量启动曾导致主机不可用，不在稳定运行的服务器上重新执行全栈启动或恢复流程。
+
+项目负责人查阅各页面入口与部署历史，请打开 [云服务器部署与访问手册](../docs/deployment-guide.md)。

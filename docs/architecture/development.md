@@ -41,3 +41,5 @@
 [Dockerfile.web](../../Dockerfile.web) 的 BACKEND_URL 构建参数用于 Next.js rewrites，默认是 http://api:8083。运行时同名环境变量用于服务端数据请求，两处需保持对应关系。
 
 私密环境配置、数据库备份和面板上传包保存在被 Git 忽略的 .deployment/。实际验证结果见 [云部署任务记录](../tasks/cloud-deployment.md)。
+
+服务器访问入口、部署步骤、服务职责、日常检查及已发布版本回滚见 [云服务器部署与访问手册](../deployment-guide.md)。
