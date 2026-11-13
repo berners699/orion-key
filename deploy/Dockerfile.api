@@ -1,0 +1,18 @@
+FROM maven:3.9.11-eclipse-temurin-21 AS maven
+
+FROM eclipse-temurin:22-jdk AS builder
+COPY --from=maven /usr/share/maven /opt/maven
+ENV PATH="/opt/maven/bin:$PATH"
+WORKDIR /build
+COPY pom.xml .
+COPY src ./src
+RUN SPRING_MAIL_HOST=127.0.0.1 MAIL_ENABLED=false mvn -B -ntp verify
+
+FROM eclipse-temurin:22-jre AS runner
+WORKDIR /app
+COPY --from=builder /build/target/orion-key-1.0.0-SNAPSHOT.jar ./app.jar
+RUN mkdir -p /app/uploads && chown -R 10001:10001 /app
+USER 10001:10001
+ENV TZ=Asia/Shanghai
+EXPOSE 8083
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]

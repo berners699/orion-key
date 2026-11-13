@@ -20,3 +20,12 @@ ui_picture/
 docs/
 .claude/
 .idea/
+
+# 部署凭据、迁移备份与本地环境配置
+.deployment/
+.env*
+**/.env*
+uploads/
+
+# 本地包管理器缓存
+.pnpm-store/

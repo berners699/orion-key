@@ -33,3 +33,11 @@
 | 运行联调 | 未启动应用和外部服务。真实 PostgreSQL 连接、支付、SMTP 和 Turnstile 尚未验证。 |
 
 基线审计的文档校验见[任务记录](../tasks/repository-baseline.md)。复验使用项目锁定工具链、可达的依赖仓库与隔离数据库。记录各命令退出码及缺失条件，保留现有测试和安全校验。
+
+## 云端部署准备
+
+本次 Ubuntu 24.04、linux/amd64 部署使用 [deploy/README.md](../../deploy/README.md) 和独立的 [deploy/compose.yaml](../../deploy/compose.yaml)，包含 PostgreSQL、API、Web 和 BEpusdt。后端镜像由 [deploy/Dockerfile.api](../../deploy/Dockerfile.api) 使用 Java 22 构建并执行 Maven verify。部署配置将 Hibernate 设为 validate，先恢复获授权的本地备份，再启动应用。
+
+[Dockerfile.web](../../Dockerfile.web) 的 BACKEND_URL 构建参数用于 Next.js rewrites，默认是 http://api:8083。运行时同名环境变量用于服务端数据请求，两处需保持对应关系。
+
+私密环境配置、数据库备份和面板上传包保存在被 Git 忽略的 .deployment/。实际验证结果见 [云部署任务记录](../tasks/cloud-deployment.md)。

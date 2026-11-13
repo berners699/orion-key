@@ -39,3 +39,9 @@ NUL
 
 # Uploads
 uploads/
+
+# Private deployment configuration and migration backups
+.deployment/
+
+# 本地包管理器缓存
+.pnpm-store/
